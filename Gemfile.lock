@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/inokappa/rspec-ftp.git
-  revision: 279d9e2b25112ffcc6df8621172d6480cbd893f2
+  revision: 162dfaa804da8e0171855b86cfae744c4f62708c
   branch: add-some-matcher
   specs:
     rspec-ftp (0.0.3)
