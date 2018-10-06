@@ -10,6 +10,7 @@ matrix:
 services:
   - docker
 before_install:
+  - bundle install --path vendor/bundle
   - docker-compose build ${TEST_TARGET}
   - docker-compose up -d
 install:
