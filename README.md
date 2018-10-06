@@ -1,5 +1,5 @@
 # rspec-ftp-sample
-
+[![Build Status](https://travis-ci.org/inokappa/rspec-ftp-sample.svg?branch=master)](https://travis-ci.org/inokappa/rspec-ftp-sample)
 ## なにこれ
 
 FTP ユーザーの以下のような振る舞いについて rspec を使ってテストします.   
