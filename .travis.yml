@@ -15,6 +15,6 @@ before_install:
 install:
 before_script:
 script:
-  - docker-compose exec ${TEST_TARGET} rake ftpcheck:vsftpd-server:ftpuser
+  - docker-compose exec ${TEST_TARGET} bundle exec rake ftpcheck:vsftpd-server:ftpuser
 after_script:
 notifications:
