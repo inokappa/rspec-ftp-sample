@@ -1,0 +1,12 @@
+# frozen_string_literal: true
+
+source "https://rubygems.org"
+
+git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
+
+gem "rake"
+gem "specinfra"
+gem "rspec"
+gem "rspec_overview"
+gem "rspec-ftp", :git => "https://github.com/inokappa/rspec-ftp.git",
+                 :branch => "add-some-matcher"
