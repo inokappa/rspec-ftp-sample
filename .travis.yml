@@ -10,12 +10,12 @@ matrix:
 services:
   - docker
 before_install:
-  - bundle install --path vendor/bundle
   - docker-compose build ${TEST_TARGET}
   - docker-compose up -d
 install:
 before_script:
 script:
+  - docker-compose exec ${TEST_TARGET} bundle install
   - docker-compose exec ${TEST_TARGET} bundle exec rake ftpcheck:vsftpd-server:ftpuser
 after_script:
 notifications:
