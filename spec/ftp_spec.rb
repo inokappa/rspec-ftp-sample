@@ -16,10 +16,18 @@ describe '#be_writable (real server)' do
   it 'check writable with active mode' do
     expect(ENV['TARGET_HOST']).to be_writable.user(property['username']).pass(property['password']).passive
   end
+
+  it 'check writable with active mode and use original test file' do
+    expect(ENV['TARGET_HOST']).to be_writable.user(property['username']).pass(property['password']).passive.test_filename('foobar')
+  end
 end 
 
 describe '#be_removable (real server)' do
   it 'check removable' do
     expect(ENV['TARGET_HOST']).to be_removable.user(property['username']).pass(property['password']).passive
+  end
+
+  it 'check removable with passive mode and use original test file' do
+    expect(ENV['TARGET_HOST']).to be_removable.user(property['username']).pass(property['password']).passive.test_filename('foobar')
   end
 end
